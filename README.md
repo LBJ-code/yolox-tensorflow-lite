@@ -1,11 +1,14 @@
-# yolox-tensorflow-lite
-研究室内容のDockerセミナー用リポジトリ
+# tfjs_pose_estimation_3d
 
-## Q&A  
+研究室内容の Docker セミナー用リポジトリ
+C:\Users\user\Desktop\yolox-tensorflow-lite
+
+## Q&A
+
 Q. "error during connect: This error may indicate that the docker daemon is not running."が出る…  
-A. dockerが起動していないのでWin10の場合はDocker Desktopを起動してください．  
+A. docker が起動していないので Win10 の場合は Docker Desktop を起動してください．
 
 <br>
 
-docker build -f .devcontainer/Dockerfile -t yolox .
-docker run --rm yolox
+docker build -f .devcontainer/Dockerfile -t httpd .
+docker run --rm -p 8080:80 httpd
