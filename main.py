@@ -127,7 +127,7 @@ def main():
     parser.add_argument(
         "--threshold", help="threshold to filter results.", default=0.5, type=float
     )
-    parser.add_argument("--thread", help="Num threads.", default=2, type=int)
+    parser.add_argument("--thread", help="Num threads.", default=8, type=int)
     parser.add_argument("--videopath", help="File path of Videofile.", default="")
     parser.add_argument("--output", help="File path of result.", default="")
     parser.add_argument(
