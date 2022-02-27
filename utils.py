@@ -32,7 +32,7 @@ def nms(boxes, scores, nms_thr):
 
 
 def multiclass_nms(boxes, scores, nms_thr, score_thr):
-    """Multiclass NMS implemented in Numpy"""
+    """Multiclass NMS implemented in numpy"""
     final_dets = []
     num_classes = scores.shape[1]
     for cls_ind in range(num_classes):
