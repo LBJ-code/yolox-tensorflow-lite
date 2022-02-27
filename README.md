@@ -22,7 +22,7 @@
 2. モデルと入力をダウンロード  
    佐藤が提供する YOLOX のモデルとサンプル用の入力動画を[https://drive.google.com/drive/folders/11Pp_9KuiRunPNnuYZ4t71QwQk3isCDGF?usp=sharing](https://drive.google.com/drive/folders/11Pp_9KuiRunPNnuYZ4t71QwQk3isCDGF?usp=sharing)からダウンロードする. その後，それらファイルを root ディレクトリに配置する．このときのディレクトリ構造は以下の通り.  
    <br>
-   ![ディレクトリ構造](./readme_img/dir.png)  
+   ![ディレクトリ構造](./readme_img/dir.PNG)  
    <br>
 
 3. X server のインストール・起動  
@@ -33,7 +33,7 @@
     ["VcXsrv Windows X Server download | SourceForge.net"](https://sourceforge.net/projects/vcxsrv/)  
     起動時には特に特殊な設定をする必要は無く，「次へ」を連打するだけでいい．起動に成功するとツールバーに以下のような表示が出る．
    <br>
-   ![xserver](./readme_img/xserver_win.png)  
+   ![xserver](./readme_img/xserver_win.PNG)  
    <br>
 
    **<Mac の場合>**  
