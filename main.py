@@ -122,13 +122,13 @@ def random_colors(N):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", help="File path of Tflite model.", required=True)
-    parser.add_argument("--label", help="File path of label file.", required=True)
+    parser.add_argument("--model", help="File path of Tflite model.", default="./model_float32.tflite")
+    parser.add_argument("--label", help="File path of label file.", default="./coco_labels.txt")
     parser.add_argument(
         "--threshold", help="threshold to filter results.", default=0.5, type=float
     )
     parser.add_argument("--thread", help="Num threads.", default=8, type=int)
-    parser.add_argument("--videopath", help="File path of Videofile.", default="")
+    parser.add_argument("--videopath", help="File path of Videofile.", default="./input.mp4")
     parser.add_argument("--output", help="File path of result.", default="")
     parser.add_argument(
         "--with_p6",
