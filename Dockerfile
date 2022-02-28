@@ -1,5 +1,5 @@
 # 1. ベースとなるDockerイメージを選ぶ"https://hub.docker.com/"にて，用途に合わせたベースイメージを選べる．
-#    今回はUbuntu上にpython3.8が事前にインストールされ，さらに容量が少ないslimイメージを選んだ．
+#    今回はDebian上にpython3.8が事前にインストールされ，さらに容量が少ないslimイメージを選んだ．
 FROM python:3.8-slim
 
 
@@ -38,9 +38,12 @@ RUN pip3 install numpy==1.22.2 \
 #    "DISPLAY"環境変数を設定して，メインOS上でX serverを起動する必要がある．
 ENV DISPLAY=host.docker.internal:0.0
 
+# 5. デフォルトでDocker内ではrootディレクトリにいる．
+#    rootディレクトリでの作業はシステムに関するディレクトリに抵触する可能性があるので,
+#    カレントディレクトリを変える．
 WORKDIR /code
 
-# 5. メインOSでのカレントディレクトリのファイル・フォルダをDockerコンテナ内に追加する
+# 6. メインOSでのカレントディレクトリのファイル・フォルダをDockerコンテナ内に追加する
 ADD . .
 
 
