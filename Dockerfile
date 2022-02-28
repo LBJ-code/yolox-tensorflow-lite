@@ -38,6 +38,7 @@ RUN pip3 install numpy==1.22.2 \
 #    "DISPLAY"環境変数を設定して，メインOS上でX serverを起動する必要がある．
 ENV DISPLAY=host.docker.internal:0.0
 
+WORKDIR /code
 
 # 5. メインOSでのカレントディレクトリのファイル・フォルダをDockerコンテナ内に追加する
 ADD . .
