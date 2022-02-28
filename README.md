@@ -65,3 +65,6 @@ Q. "error during connect: This error may indicate that the docker daemon is not 
 A. docker が起動していないので Win10 の場合は Docker Desktop を起動してください．
 
 <br>
+
+Q. ENVコマンドを追加したのに，"qt.qpa.xcb: could not connect to display host.docker.internal:0.0"というエラーがでる．  
+A. Xserverが起動してないです．もう一度Xserver起動手順に則って操作できているかか確認してください
